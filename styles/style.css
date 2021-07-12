@@ -18,6 +18,10 @@ main{
 }
 
 /* top player style  */
+.top-player{ 
+    /* this is parents div  */
+    margin-bottom: 30px;
+}
 .section-title{
     color: #562EFF;
     size: 24px;
@@ -29,6 +33,7 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
 }
+/* players images & name div */
 .player{
     display: flex;
     align-items: center;
@@ -38,9 +43,14 @@ main{
     height: 56px;
     width: 56px;
 }
+/* players Name */
 .player-no{
     margin-left: 12px;
     size: 24px;
     font-size: 18px;
+
+}
+hr{   
+border: 1px solid #D1D1D1;
 
 }
