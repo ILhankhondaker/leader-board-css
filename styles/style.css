@@ -97,9 +97,11 @@ margin-bottom: 27px;
  .course{
      border-radius: 10px;
      padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
  .course-banner img{
+     margin-top: 5px;
+     margin-left: 15px;
     width: 224px;
     height: 104px;
  }
@@ -130,3 +132,31 @@ margin-bottom: 27px;
      background-color: lightpink;
      border-radius: 20px;
  }
+    /* -----------------------
+         Media Queries  
+       ---------------------*/
+
+       /* MOdile Device */
+       @media only screen and (max-width:688px){
+           .container{
+               width: 100%;
+           }
+           .players,.blogs,.courses{
+               grid-template-columns: repeat(1,1fr);
+           }
+           .player, .blog{
+               flex-direction: column;
+           }
+       }
+       /* tablet Device  */
+       @media only screen and (min-width:688px) and (max-width:992px) {
+           
+           .container{width: 100%;}
+
+          .players,.courses{
+              grid-template-columns: repeat(2,1fr);
+          } 
+          .blogs{
+              grid-template-columns: repeat(1,1fr);
+          }
+       }
